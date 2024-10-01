@@ -1,11 +1,17 @@
-<%= link_to "Insert Book", new_book_path %>
+<%= stylesheet_link_tag 'generation', media: 'all' %>
 
-<h1>Books</h1>
+<div class="container_main">
 
-<ul>
-  <% @books.each do |b| %>
-    <li>
-    <%= link_to b.title, b %>
-    </li>
-  <% end %>
-</ul>
+  <h1>Books</h1>
+  <h2>List</h2>
+  <ul>
+    <% @books.each do |b| %>
+      <li>
+      <%= link_to b.title, b %>
+      </li>
+    <% end %>
+  </ul>
+
+  <%= link_to "Insert Book", new_book_path, class: "div_button" %>
+
+</div>
