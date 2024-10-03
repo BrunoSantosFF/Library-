@@ -20,25 +20,27 @@ body {
 
 .div_button {
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 10px 20px;
+  font-size: 20px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #15d4d0;
+  background-color: #d49715;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  bottom: 20px;
+  position: absolute;
 }
 
 .div_button:hover {
-  background-color: #06e1fd
+  background-color: #fdaf06
 }
 
 .div_button:active {
-  background-color: #68e18c;
+  background-color: #a6b057;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
