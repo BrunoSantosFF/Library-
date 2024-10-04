@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :set_product, only: [:show, :destroy]
+  before_action :set_product, only: [:show, :destroy, :edit]
 
   def index
     @books = Book.all 
@@ -10,6 +10,9 @@ class BooksController < ApplicationController
   end
 
   def show
+  end
+
+  def edit
   end
 
   def create
@@ -27,6 +30,14 @@ class BooksController < ApplicationController
       redirect_to books_path
     else
       redirect_to @book, alert: 'Error'
+    end
+  end
+
+  def update
+    if @book.update(book_params)
+      redirect_to @book, notice: 'Book was successfully updated.'
+    else
+      render :edit
     end
   end
 
