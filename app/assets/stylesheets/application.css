@@ -31,6 +31,10 @@ body {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  
+}
+
+.div_button_position {
   bottom: 20px;
   position: absolute;
 }

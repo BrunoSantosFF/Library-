@@ -18,8 +18,7 @@ class BooksController < ApplicationController
     if @book.save
       redirect_to books_path, notice: "Book was created successfully."
     else
-      flash.now[:alert] = "There was a problem creating the book."  
-      render :new 
+      render :new
     end
   end
 

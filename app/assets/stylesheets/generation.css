@@ -57,3 +57,35 @@
   border-radius:0px 20px 0px 20px;
   border: 2px solid #000000;
 }
+
+/* NEW */
+.submit {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.position_button {
+  text-align: center;
+}
+
+/* TEXT Field*/
+.div_input {
+  margin-left: 40px;
+}
+
+.input_text_field {
+  width: 60%;                /* Largura do campo */
+  padding: 10px;              /* Espaçamento interno */
+  font-size: 15px;            /* Tamanho da fonte */
+  border: 2px solid #ccc;     /* Borda com cor */
+  border-radius: 8px;         /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o campo */
+  outline: none;              /* Remove o contorno padrão */
+  transition: border-color 0.3s ease; /* Animação suave na mudança de cor da borda */
+}
+
+/* Estilo ao focar no campo */
+.input_text_field:focus {
+  border-color: #3498db;      /* Cor da borda ao focar */
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3); /* Sombra mais forte ao focar */
+}
