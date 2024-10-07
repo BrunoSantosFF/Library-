@@ -9,6 +9,7 @@
 
   <div class="gap_div">
     <%= link_to "Back", books_path, class: "div_button"  %>
-    <%= link_to link_to 'Delete', @book ,data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'},class: "div_button" %>
+    <%= link_to "Edit", edit_book_path, class: "div_button"  %>
+    <%= link_to link_to 'Delete', @book ,data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'},class: "div_button div_button_position" %>
   </div>
 </div>
