@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :set_product, only: [:show, :destroy, :edit]
+  before_action :set_product, only: [:show, :destroy, :edit, :update]
 
   def index
     @books = Book.all 
