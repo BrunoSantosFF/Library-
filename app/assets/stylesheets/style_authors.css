@@ -1,8 +1,17 @@
 .container_main {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid;
-  width: 40%;
+  border: 10px solid #025951;
+  border-radius: 5px;
+  width: 30%;
   height: 30%;
+  transition: 1s;
+}
+
+.container_main:hover { 
+  border: 20px solid #034159;
+  background-color: #02735E;
+  transition: 1s;  
 }
