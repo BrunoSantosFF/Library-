@@ -7,8 +7,6 @@
     <div class="div_input">
       <%= f.label "Title: "%>
       <%= f.text_field :title, class: "input_text_field", placeholder: "Enter the book title", autofocus: true ,required: true%>
-      <%= f.label "Author : "%>
-      <%= f.collection_select :author_id, Author.all, :id, :name, {prompt: 'Select an Author'},{class: "input_text_field" }%>
     </div>
 
     <div class="submit">
